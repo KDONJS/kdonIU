@@ -1,27 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-    --color-danger: #a80218;
-    --color-danger-active: #d60622;
-    --color-danger-focus: #d6062267;
+    --color-danger: #ed3938;
+    --color-bacground-danger: #f9e6e8;
+    --color-danger-active: #ed3938;
+    --color-danger-focus: #f9e6e8;
+    --color-font-input: #080f33;
+    --color-primary: #8c59e3;
+    --color-bacground-primary: #f0e9fe;
+    --color-primary-active: #8c59e3;
+    --color-primary-focus: #f0e9fe;
     --color-placeholder: #9ba1b7;
     --padding-sm: 0.5rem;
     --border-radius-sm:0.3rem;
   }
 
-.input-Outline{
-    border: solid 0.1rem var(--color-danger);
-    padding: var(--padding-sm);
+.input-Outline-danger{
+    border: solid 2px var(--color-danger);
+    height: 48px;
+    width: 400px;
+    color: var(--color-font-input);
+    font-weight: 700;
     border-radius: var(--border-radius-sm);
+    background: var(--color-bacground-danger);
     outline: none;
 }
 
-.input-Outline::placeholder{
+.input-Outline-danger::placeholder{
     color: var(--color-placeholder);
     font-weight: 100;
+    padding: var(--padding-sm);
 }
 
-.input-Outline:focus{
+.input-Outline-danger:focus{
     border-color: var(--color-danger-active) !important;
-    box-shadow: 0px 0px 5px 0px var(--color-danger-focus);
+    box-shadow: 0px 0px 0px 3px var(--color-danger-focus);
+}
+
+.input-Outline-primary{
+    border: solid 2px var(--color-primary);
+    height: 48px;
+    width: 400px;
+    color: var(--color-font-input);
+    font-weight: 700;
+    border-radius: var(--border-radius-sm);
+    background: var(--color-bacground-primary);
+    outline: none;
+}
+
+.input-Outline-primary::placeholder{
+    color: var(--color-placeholder);
+    font-weight: 100;
+    padding: var(--padding-sm);
+}
+
+.input-Outline-primary:focus{
+    border-color: var(--color-primary-active) !important;
+    box-shadow: 0px 0px 5px 0px var(--color-primary-focus);
 }
