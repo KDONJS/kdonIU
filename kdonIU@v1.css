@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --color-danger: #a80218;
+    --color-danger-active: #d60622;
+    --color-danger-focus: #d6062267;
+    --color-placeholder: #9ba1b7;
+    --padding-sm: 0.5rem;
+    --border-radius-sm:0.3rem;
+  }
+
+.input-Outline{
+    border: solid 0.1rem var(--color-danger);
+    padding: var(--padding-sm);
+    border-radius: var(--border-radius-sm);
+    outline: none;
+}
+
+.input-Outline::placeholder{
+    color: var(--color-placeholder);
+    font-weight: 100;
+}
+
+.input-Outline:focus{
+    border-color: var(--color-danger-active) !important;
+    box-shadow: 0px 0px 5px 0px var(--color-danger-focus);
+}
